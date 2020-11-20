@@ -1,0 +1,64 @@
+
+
+
+#video{
+	background-image: url(https://media.discordapp.net/attachments/696539845807571008/777688957441277982/ee3651d9e9c3695874edf5530cdae1a0.png?width=641&height=427);
+	background-repeat: no-repeat;	
+}
+
+
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+
+
+#quiz{
+	background-image: url(https://image.freepik.com/vetores-gratis/conjunto-de-metas-futuristas_74855-6480.jpg);    
+}
+
+.game-quiz{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.card-body{
+    background-color:#fff;
+}
+
+#quiz-title{
+	color:#fff;
+	font-width:bold;
+	text-align:center;
+}
