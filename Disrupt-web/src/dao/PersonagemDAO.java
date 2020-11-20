@@ -30,7 +30,7 @@ public class PersonagemDAO {
             	personagem.setId(rs.getInt("ID_PERSONAGEM"));
             	personagem.setNome(rs.getNString("NOME"));
             	personagem.setHistoria(rs.getNString("HISTORIA"));
-            	personagem.setImage(rs.getNString("IMAGEM_PERSONAGEM"));
+            	personagem.setImagem(rs.getNString("IMAGEM_PERSONAGEM"));
             	
             }
 

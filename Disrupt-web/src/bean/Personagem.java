@@ -9,7 +9,7 @@ public class Personagem {
 
     private String historia;
 
-    private String image;
+    private String imagem;
     
     public int getId() {
         return id;
@@ -35,12 +35,12 @@ public class Personagem {
         this.historia = historia;
     }
     
-    public String getImage() {
-        return image;
+    public String getImagem() {
+        return imagem;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
     }
 
 

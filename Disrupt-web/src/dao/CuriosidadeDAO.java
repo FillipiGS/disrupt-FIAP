@@ -29,7 +29,7 @@ public class CuriosidadeDAO {
                 curiosidade = new Curiosidade();
                 curiosidade.setId(rs.getInt("ID_CURIOSIDADE"));
                 curiosidade.setDescricao(rs.getNString("DESCRICAO_CURIOSIDADE"));
-                curiosidade.setImagem(rs.getBlob("IMAGEM_CURIOSIDADE"));
+                curiosidade.setImagem(rs.getNString("IMAGEM_CURIOSIDADE"));
             }
 
         } catch (SQLException e) {

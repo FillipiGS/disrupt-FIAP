@@ -1,6 +1,5 @@
 package bean;
 
-import java.sql.Blob;
 
 public class Curiosidade {
 	
@@ -8,7 +7,7 @@ public class Curiosidade {
 	
     private String descricao;
 
-    private Blob imagem;
+    private String imagem;
     
     public int getId() {
         return id;
@@ -26,12 +25,12 @@ public class Curiosidade {
         this.descricao = descricao;
     }
 
-    public Blob getImagem() {
+    public String getImagem() {
         return imagem;
     }
 
-    public void setImagem(Blob blob) {
-        this.imagem = blob;
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
     }
 
 }
