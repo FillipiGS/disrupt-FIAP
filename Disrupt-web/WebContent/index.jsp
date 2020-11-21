@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"%>
 
 <%@ page import="bean.Jogador" %>
 
@@ -30,19 +30,17 @@
 
 <!-- CHAMANDO A NAVBAR -->
 
-<div class="navbar-fixed-top" id="navbar">
 	<%@ include file="nav.jsp"%> 
-</div>
 
 	
 	 <!-- The video -->
-	  <video autoplay muted loop id="myVideo">
+<video autoplay muted loop id="myVideo">
   <source src="video/deVolta.mp4" type="video/mp4">
 </video>
 
 <div class="content">
-  <h1>Marty McFly est� em apuros...</h1>
-  <p>Inicie o quiz para ajud�-lo!</p>
+  <h1>Marty McFly está em apuros...</h1>
+  <p>Inicie o quiz para ajudá-lo!</p>
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado" id="myBtn">Iniciar quiz!</button>
 </div> 
 
@@ -55,10 +53,27 @@
                     <div class= "card justify-content-center"  style="width: 35rem; border-radius: 10px; border: 3px solid #00f;">
                         <img src="img/clock.gif" class="card-img-top" alt="imagem quiz">
                         <div class="card-body">
-                          <h5 class="card-title">Lorem Impsum</h5>
-                          <p class="card-text">Esse rélógio no topo do prédio é o mesmo que gerou energia através do raio para McFly viajar no tempo?</p>
-                          <a href="#" class="btn btn-primary" style="margin-left:10%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">SIM</a>
-                          <a href="#" class="btn btn-primary" style="margin-left: 50%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">N�O</a>
+                          <p class="card-text">Esse relógio no topo do prédio é o mesmo que gerou energia atraves do raio para McFly viajar no tempo?</p>
+							<a href="#" data-toggle="modal" data-target="#modalExemplo" class="btn btn-primary" style="margin-left:10%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">SIM</a>
+							<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Você acertou!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        PERGUNTA 1 / 10
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+                          <a href="#" class="btn btn-primary" style="margin-left: 50%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">NÃO</a>
                         </div>
                       </div>
                 </div>
@@ -71,10 +86,9 @@
                     <div class= "card justify-content-center"  style="width: 35rem; border-radius: 10px; border: 3px solid #00f;">
                         <img src="img/einstein.gif" class="card-img-top" alt="imagem quiz">
                         <div class="card-body">
-                          <h5 class="card-title">Lorem Impsum</h5>
-                          <p class="card-text">O ser que estava vianajando no tempo nessa cena foi a Jennifer, a namorada de McFLy?</p>
+                          <p class="card-text">O ser que estava viajando no tempo nessa cena foi a Jennifer, a namorada de McFLy?</p>
                           <a href="#" class="btn btn-primary" style="margin-left:10%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">SIM</a>
-                          <a href="#" class="btn btn-primary" style="margin-left: 50%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">N�O</a>
+                          <a href="#" class="btn btn-primary" style="margin-left: 50%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">NÃO</a>
                         </div>
                       </div>
                 </div>
@@ -87,10 +101,9 @@
                     <div class= "card justify-content-center"  style="width: 35rem; border-radius: 10px; border: 3px solid #00f;">
                         <img src="img/ck.gif" class="card-img-top" alt="imagem quiz">
                         <div class="card-body">
-                          <h5 class="card-title">Lorem Impsum</h5>
-                          <p class="card-text">Lorraine nessa cena está encantada com a fala de seu amado George?</p>
+                          <p class="card-text">Lorraine nessa cena esta encantada com a fala de seu amado George?</p>
                           <a href="#" class="btn btn-primary" style="margin-left:10%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">SIM</a>
-                          <a href="#" class="btn btn-primary" style="margin-left: 50%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">N�O</a>
+                          <a href="#" class="btn btn-primary" style="margin-left: 50%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">NÃO</a>
                         </div>
                       </div>
                 </div>
@@ -103,10 +116,9 @@
                     <div class= "card justify-content-center"  style="width: 35rem; border-radius: 10px; border: 3px solid #00f;">
                         <img src="img/run.gif" class="card-img-top" alt="imagem quiz">
                         <div class="card-body">
-                          <h5 class="card-title">Lorem Impsum</h5>
-                          <p class="card-text">Marty McFly está fungindo do Biff devidp a uma briga no Café da cidade?</p>
+                          <p class="card-text">Marty McFly está fugindo do Biff devido a uma briga no Café da cidade?</p>
                           <a href="#" class="btn btn-primary" style=" margin-left:10%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">SIM</a>
-                          <a href="#" class="btn btn-primary" style="margin-left: 50%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">N�O</a>
+                          <a href="#" class="btn btn-primary" style="margin-left: 50%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">NÃO</a>
                         </div>
                       </div>
                 </div>
@@ -119,10 +131,9 @@
                     <div class= "card justify-content-center"  style="width: 35rem; border-radius: 10px; border: 3px solid #00f;">
                         <img src="img/tv.gif" class="card-img-top" alt="imagem quiz">
                         <div class="card-body">
-                          <h5 class="card-title">Lorem Impsum</h5>
-                          <p class="card-text">Os irmão de Lorraine estão espantados e dizendo que "Calvin Klein" é rico devido ele ter dois telefones em sua casa?</p>
+                          <p class="card-text">Os irmãos de Lorraine estão espantados e dizendo que "Calvin Klein" era rico devido ele ter dois telefones em sua casa?</p>
                           <a href="#" class="btn btn-primary" style=" margin-left:10% ;background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">SIM</a>
-                          <a href="#" class="btn btn-primary" style="margin-left: 50%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">N�O</a>
+                          <a href="#" class="btn btn-primary" style="margin-left: 50%; background-color:#00f; border:2px solid #000; border-radius: 19px; width:70px;">NÃO</a>
                         </div>
                       </div>
                 </div>

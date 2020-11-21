@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +22,7 @@
                     <a id="main-logo" href="index.jsp">
                         <img loading="lazy" src="img/logo.png" alt="Logotipo do filme">
                     </a>
-                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Visualizar a navega��o">
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Visualizar a navegaï¿½ï¿½o">
                         <i class="fa fa-bars"></i>
                     </button>
                     <hr class="d-none d-lg-block">
@@ -36,11 +35,11 @@
                                   </li>
 
                                   <li class="nav-item">
-                                    <a class="nav-link" href="#">Diagrama</a>
+                                    <a class="nav-link" href="https://drive.google.com/file/d/1BD5hsrTlMqQI_y94Q69bD793meIQOWHf/view?usp=sharing">Diagrama</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Machine Learning</a>
+                                    <a class="nav-link" href="https://drive.google.com/file/d/1XUKoVBt4ddULqvr4XH6UoCc767MDthGr/view?usp=sharing">Machine Learning</a>
                                 </li>
 
                                 <li class="nav-item">
