@@ -1,5 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+
+<%@ page import="bean.Jogador" %>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"  prefix="f" %>
+
+
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,26 +24,28 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     
    
-<title>Back to the future</title>
+<title>Back to the future - QUIZ</title>
 </head>
 <body>
 
 <!-- CHAMANDO A NAVBAR -->
 
+<div class="navbar-fixed-top" id="navbar">
 	<%@ include file="nav.jsp"%> 
+</div>
 
-    <section id="video">
-        <video autoplay muted loop id="myVideo">
-            
-          </video>          
-          <!-- Optional: some overlay text to describe the video -->
-          <div class="content">
-            <h1>MC FLY ESTï¿½ EM APUROS!</h1>
-            <p>Inicie o quiz e ajude-o.</p>
-            <!-- Use a button to pause/play the video with JavaScript -->
-            <button id="myBtn">INICIAR QUIZ</button>
-          </div>
-    </section>
+	
+	 <!-- The video -->
+	  <video autoplay muted loop id="myVideo">
+  <source src="video/deVolta.mp4" type="video/mp4">
+</video>
+
+<div class="content">
+  <h1>Marty McFly está em apuros...</h1>
+  <p>Inicie o quiz para ajudá-lo!</p>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado" id="myBtn">Iniciar quiz!</button>
+</div> 
+
 
     <section id="quiz" style="display:none;">
     	<h1 id="quiz-title">QUIZ SOBRE O FILME</h1>

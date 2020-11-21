@@ -32,14 +32,4 @@ public class Jogador {
         this.pontuacao = pontuacao;
     }
 
-	public void setId(String parameter) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void setPontuacao(String parameter) {
-		// TODO Auto-generated method stub
-		
-	}
-
 }
